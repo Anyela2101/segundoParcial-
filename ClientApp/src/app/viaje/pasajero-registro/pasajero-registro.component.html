@@ -1,0 +1,43 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de Pasajeros</h2>
+            <form #formulario="ngForm">
+                <br>
+                                
+                <div class="form-group">
+                    <label>Identificacion</label>
+                    <input type="text" placeholder="Digite la identificacion del pasajero" name="identificacion"  [(ngModel)]="pasajero.identificacion" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Nombres</label>
+                    <input type="text" placeholder="Digite los nombres del pasajero" name="nombres"  [(ngModel)]="pasajero.nombre" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="Digite los apellidos del pasajero"  name="apellido"  [(ngModel)]="pasajero.apellido" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Telefono</label>
+                    <input type="text" placeholder="Digite el telefono del pasajero"  name="telefono"  [(ngModel)]="pasajero.telefono" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" placeholder="Digite el email del pasajero"  name="email"  [(ngModel)]="pasajero.email" class="form-control" />
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1"(click)="add(formulario)">Registrar Datos</button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+
+    
